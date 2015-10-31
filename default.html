@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Mi Primer sitio con Javascript</title>
+<script type="text/javascript">
+function censurar(){
+	var comentarioUsuario= document.getElementById('v1').value;
+	var palabraReservada= document.getElementById('v2').value;
+	var palabras=palabraReservada.split(",");
+	var resultado=comentarioUsuario;
+	for(var i=0; i < palabras.length; i++){
+	resultado= resultado.replace(new RegExp( palabras[i]),"****");
+}
+	document.getElementById("v3").value=resultado;
+	}
+</script>
+</head>
+<body>
+	<h1>Mi Primer sitio con Javascript</h1>
+<p>
+Valor 1: <input type="text" id="v1" autofocus required />
+<br />
+Valor 2: <input type="text" id="v2" autofocus required />
+<br />
+Resultado: <input type="textarea" id="v3" autofocus required />
+<input type="button" value="Submit!" onClick="censurar()"/>
+</p>
+</body>
+</html>

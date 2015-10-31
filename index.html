@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style type="text/css">
+      .parrafo{
+        width: 60%;
+        text-align: justify;
+        margin: 0 auto;
+        font-size: 18px;
+      }
+        .color{
+
+          background-color: red;
+        }
+        .logo2{
+          background-image: url(logo.png); 
+          background-color: none;
+          z-index: 2;
+        }
+      </style>
+    </head>
+
+    <body>
+
+
+<div class="navbar-fixed">
+        <nav class="color">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo logo2">logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="sass.html">Inicio</a></li>
+        <li><a href="badges.html">Nosotros</a></li>
+        <li><a href="collapsible.html">Contacto</a></li>
+        <li><a href="mobile.html">Servicios</a></li>
+
+        <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Descargar</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Compartir</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Contactar</a></li>
+</ul>
+
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Opciones<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li class="active"><a href="sass.html">Inicio</a></li>
+        <li><a href="badges.html">Nosotros</a></li>
+        <li><a href="collapsible.html">Contacto</a></li>
+        <li><a href="mobile.html">Servicios</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, mauris vel tempor laoreet, metus augue lobortis nisl, ac pharetra diam arcu sed urna. In orci risus, sagittis non congue molestie, posuere at turpis. In in orci metus. Integer fringilla interdum nisi, sed dignissim libero condimentum sit amet. Sed eu feugiat diam. Quisque nec commodo enim, sed eleifend erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sem mi, venenatis ut neque quis, condimentum facilisis lacus. Nulla facilisi. Cras varius dapibus laoreet.
+<br>
+Mauris vel eleifend turpis, eget condimentum sapien. Donec vulputate libero sit amet nisl iaculis condimentum eu ultricies turpis. Cras at eros fermentum, semper augue et, porttitor metus. Morbi eget nisi eu nunc efficitur scelerisque. Aliquam luctus in dolor eget euismod. Sed eget risus et tellus rutrum interdum eget eget sem. Donec malesuada est vel felis sagittis, id semper risus eleifend. Donec dolor odio, pulvinar et metus at, tempus placerat purus. Mauris vestibulum purus in dignissim convallis. Vestibulum eleifend tempor rhoncus. Donec dolor sapien, pretium nec varius nec, tempor vitae leo. Fusce nec eleifend lectus. In ultrices elit at ipsum malesuada, blandit ultrices neque molestie. Pellentesque nulla ante, congue at maximus lacinia, maximus sed enim.
+<br>
+Fusce vitae hendrerit metus. Aenean eu felis vitae sem luctus semper quis ut libero. Vivamus vitae ultricies tortor. Nulla nisl sapien, blandit at pellentesque ut, molestie vitae augue. Etiam quis interdum ante. Nulla et tellus sapien. Nulla velit lectus, gravida eu orci sed, dapibus fermentum lectus. Sed placerat pharetra dolor. Sed sit amet tempor nibh, non feugiat ante. Donec id luctus mauris. Nunc venenatis nisi at erat accumsan ultrices. Aenean at dignissim elit. Aenean at ante eget massa ultrices euismod. Donec eget ultrices lectus. Ut sed ligula semper, laoreet elit in, pulvinar mauris.
+<br>
+Sed vel imperdiet augue. Fusce cursus dui et tristique pharetra. Vivamus ac quam et velit sodales volutpat ac sed erat. Nunc bibendum nisl sed dignissim pretium. Vivamus ut velit at nisl euismod efficitur. Suspendisse potenti. Vestibulum ligula ipsum, vehicula at porttitor sit amet, porttitor sit amet orci. Mauris vehicula tellus at tincidunt molestie. Ut sed nibh ut quam vulputate pretium. Fusce leo mi, cursus in hendrerit vel, congue vitae velit. Donec placerat efficitur felis, id consectetur orci feugiat eu. In in vestibulum ligula. Nam vel elementum tellus.
+<br>
+Phasellus gravida, ligula at gravida tempus, enim libero commodo neque, sed varius massa orci et eros. Pellentesque quis dui orci. Donec at viverra lacus, et lobortis tellus. Ut maximus sit amet urna et porta. Maecenas ac leo in eros faucibus porttitor eget eget elit. Fusce sed velit elementum sem commodo lacinia dapibus vel augue. Nam tellus massa, mollis id faucibus rutrum, tincidunt sed dolor. Pellentesque lacinia elit ex. Curabitur finibus nulla mauris, et aliquam felis vestibulum id.</p>
+
+
+<img class="materialboxed" width="650" src="coca.jpg" style="margin:0 auto;">
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(".button-collapse").sideNav({
+          edge: 'right',
+          menuWidth:500
+        });
+        $(".dropdown-button").dropdown();
+        $('.materialboxed').materialbox();
+      </script>
+    </body>
+  </html>
